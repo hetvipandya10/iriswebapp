@@ -11,6 +11,6 @@ import pickle
 model=pickle.load(open("irisml.pkl","rb"))
 if st.button("Predict"):
     prd=model.predict([[sl,sw,pl,pw]])
-    st.success("The Flower is "+ prd[0])
+    st.success("The Flower is "+ prd)
 
 
